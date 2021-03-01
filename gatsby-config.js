@@ -9,7 +9,7 @@ module.exports = {
     image: '/og.png', 
     
   },
-  pathPrefix: '/yrreprolyat.github.io',
+
   
 
   plugins: [
