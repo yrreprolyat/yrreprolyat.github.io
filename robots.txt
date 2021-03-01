@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://yrreprolyat.github.io/sitemap.xml
-Host: https://yrreprolyat.github.io
+Sitemap: https://yrreprolyat.com/sitemap.xml
+Host: https://yrreprolyat.com
