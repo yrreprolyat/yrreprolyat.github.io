@@ -10,9 +10,6 @@
   "keywords": [
     "gatsby"
   ],
-  
-
-  
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -21,7 +18,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "husky": {
     "hooks": {
@@ -39,6 +36,7 @@
   "dependencies": {
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.10.6",
+    "curl": "^0.1.4",
     "gatsby": "^2.32.8",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-google-analytics": "^2.1.29",

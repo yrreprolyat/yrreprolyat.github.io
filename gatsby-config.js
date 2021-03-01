@@ -9,12 +9,13 @@ module.exports = {
     image: '/og.png', 
     
   },
-    pathPrefix: "/yrreprolyat.github.io",
+  pathPrefix: '/yrreprolyat.github.io',
   
 
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
