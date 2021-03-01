@@ -5,7 +5,7 @@ module.exports = {
     title: 'Taylor Perry',
     description:
       'Taylor Perry is a senior at Texas State University focusing on data modeling processes and building applications.',
-    siteUrl: 'https://yrreprolyat.github.io/', 
+    siteUrl: 'https://yrreprolyat.com', 
     image: '/og.png', 
     
   },
