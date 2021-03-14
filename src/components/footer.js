@@ -91,11 +91,7 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/yrreprolyat">
-          <div> Built by Taylor Perry</div>
 
- 
-        </a>
       </StyledCredit>
     </StyledFooter>
   );
