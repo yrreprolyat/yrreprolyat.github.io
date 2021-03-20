@@ -9,4 +9,4 @@ tech:
 showInProjects: true
 ---
 
- Sentiment analysis performed on textual movie review data to help studios monitor brand and product sentiment in customer feedback.
+ A sentiment analysis engine for movie reviews built with Java to collect, categorize, and store movie review data.

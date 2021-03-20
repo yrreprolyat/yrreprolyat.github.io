@@ -1,8 +1,8 @@
 ---
 date: '2'
 title: 'Exoplanet Detection Model'
-cover: './demo.jpg'
 github: 'https://github.com/yrreprolyat/Exoplanet-Detection'
+
 tech:
   - Python
   - AutoML
