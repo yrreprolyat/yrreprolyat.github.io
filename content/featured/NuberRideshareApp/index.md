@@ -11,5 +11,5 @@ tech:
 showInProjects: true
 ---
 
-A mobile Rideshare App using React framework, PostgreSQL and Google API to create and complete trips.
+A rideshare app build with React Native, PostgreSQL and TypeScript.
 
