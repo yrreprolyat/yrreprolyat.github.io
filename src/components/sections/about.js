@@ -141,13 +141,12 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>I'm Taylor, a software engineer based in Austin, TX.</p>
+            <p>I'm Taylor, a data engineer based in Austin, TX.</p>
 
             <p>
-            I am passionate about designing and implementing data analysis tools and algorithms using predictive
-            data modeling methods to deliver data-driven solutions. I have experience at creating data regression
-            models, using predictive modeling, and analyzing data mining algorithms to deliver insights and 
-            implement action-oriented solutions to complex business problems. 
+            I am passionate about designing and implementing applications, data analysis tools and algorithms to deliver data-driven solutions.
+            I have experience at creating data regression models, using predictive modeling, and analyzing data mining algorithms to deliver insights and 
+            implement action-oriented solutions to complex problems. 
             </p>
 
             <p> most recently used technologies :</p>
