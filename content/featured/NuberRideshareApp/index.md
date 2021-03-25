@@ -11,5 +11,5 @@ tech:
 showInProjects: true
 ---
 
-A rideshare app build with React Native, PostgreSQL and TypeScript.
+A full-stack real-time rideshare application I developed using React Native, PostgreSQL and TypeScript.
 

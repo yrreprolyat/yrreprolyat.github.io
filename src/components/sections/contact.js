@@ -51,8 +51,7 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        I am currently looking for new opportunities in data science and software engineering for summer 2021.
-        Though, feel free to reach out if you have a question or just want to say hi.
+        I am highly motivated and currently looking for new opportunities in software engineering.
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>
