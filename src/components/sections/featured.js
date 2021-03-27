@@ -287,7 +287,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Primary Projects
+        Primary Work
       </h2>
 
       <div>

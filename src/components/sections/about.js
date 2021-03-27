@@ -141,10 +141,10 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>I'm Taylor, a software engineer based in Austin, TX.</p>
+            <p>I'm Taylor, an undergrad software engineer based in Austin, TX.</p>
 
             <p>
-            I am most passionate about building resilient data pipelines and applying machine learning, deep learning, and other statistical
+            I am most passionate about building resilient data pipelines and applying statistical
             techniques to solve business problems in various verticals like product, sales, marketing,
             operations, etc by leveraging vast structured and unstructured data sources.
             </p>
