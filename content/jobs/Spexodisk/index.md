@@ -1,9 +1,11 @@
 ---
 title: 'Data Engineer'
-company: 'Faculty of Physics, Texas State University'
+company: 'Texas State University'
 location: 'Austin, TX'
 range: 'May 2021 - current'
 url: 'https://banzatti.wp.txstate.edu/spexodisks/'
 ---
 
-
+- Build processes supporting data transformation, data structures, metadata, dependency and workload management.
+- Build the infrastructure required for optimal extraction, transformation, and loading of  spectral data.
+- Work with stakeholders including the Executive, Product, Data and Design teams to assist with data-related technical issues and support their data infrastructure needs.
