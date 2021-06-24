@@ -132,7 +132,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['C++','NodeJS', 'PostgreSQL', 'Python', 'Scikit-learn', 'Tensor flow'];
+  const skills = ['Python', 'MongoDB', 'Django', 'React', 'Tensor flow'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -141,7 +141,7 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>I'm Taylor, an undergrad software engineer based in Austin, TX.</p>
+            <p>I'm Taylor, an Austin-based software engineer</p>
 
             <p>
             I am most passionate about building resilient data pipelines and robust applications
