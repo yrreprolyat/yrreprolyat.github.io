@@ -2,7 +2,7 @@
 title: 'Data Engineer'
 company: 'Texas State University'
 location: 'Austin, TX'
-range: 'May 2021 - current'
+range: 'May 2021 - presnt'
 url: 'https://banzatti.wp.txstate.edu/spexodisks/'
 ---
 

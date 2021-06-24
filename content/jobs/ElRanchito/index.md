@@ -2,7 +2,7 @@
 title: 'Conservation Corps Crew Leader'
 company: 'El Ranchito'
 location: 'Austin, TX'
-range: 'June-July 2018/2019'
+range: 'May 2018 - August 2019'
 url: 'https://www.elranchito.org/'
 ---
 

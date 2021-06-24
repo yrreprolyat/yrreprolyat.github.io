@@ -176,6 +176,7 @@ const Jobs = () => {
     }
   `);
 
+
   const jobsData = data.jobs.edges;
 
   const [activeTabId, setActiveTabId] = useState(0);
