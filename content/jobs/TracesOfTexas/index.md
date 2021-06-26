@@ -2,7 +2,7 @@
 title: 'Software Engineer Intern'
 company: 'Traces of Texas'
 location: 'Austin, TX'
-range: 'May 2020 - October 2020'
+range: 'May - October 2020'
 url: 'https://www.facebook.com/TracesofTexas/'
 ---
 
