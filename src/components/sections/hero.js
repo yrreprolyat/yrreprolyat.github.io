@@ -52,7 +52,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I extract value from data.</h3>;
   const four = (
     <p>
-     I'm a software engineer based in Austin who specializes in building data pipelines.
+     I'm a senior at Texas State University studying computer science, with a focus on data modeling.
     </p>
   );
   const five = (
