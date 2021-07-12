@@ -132,7 +132,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['C++','NodeJS', 'PostgreSQL', 'Python', 'Scikit-learn', 'Tensor flow'];
+  const skills = ['C++','Java', 'MySQL', 'Python', 'Scikit-learn', 'Django'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -141,12 +141,12 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>I'm Taylor, an undergrad software engineer based in Austin, TX.</p>
+            <p>I'm Taylor, a software engineer based in Austin, TX.</p>
 
             <p>
             I am most passionate about building resilient data pipelines and robust applications
-            to solve business problems in various verticals like product, sales, marketing,
-            operations, etc by leveraging vast structured and unstructured data sources.
+            to solve both science and business problems in various verticals by leveraging vast
+            structured and unstructured data sources.
             </p>
 
             <p> recently used technologies :</p>
