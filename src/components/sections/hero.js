@@ -52,7 +52,8 @@ const Hero = () => {
   const three = <h3 className="big-heading">I extract value from data.</h3>;
   const four = (
     <p>
-     I'm a recent graduate from Texas State University studying computer science, with a focus on data modeling.
+     I'm a software engineer with experience building data pipelines for web applications, applying models and algorithms to mine big data stores,
+     and building ML systems for computer vision. Currently working on the Spexodisks Database for Dr. Andrea Banzatti at Texas State University. 
     </p>
   );
   const five = (
