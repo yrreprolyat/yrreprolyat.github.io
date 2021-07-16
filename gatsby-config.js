@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Taylor Perry',
     description:
-      'Taylor Perry is a senior at Texas State University focusing on data modeling processes and building applications.',
+      'Taylor Perry is a software engineer focusing on data modeling processes and building web applications.',
     siteUrl: 'https://www.yrreprolyat.com', 
     image: '/og.png', 
     
