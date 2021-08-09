@@ -53,7 +53,7 @@ const Hero = () => {
   const four = (
     <p>
      I'm a software engineer with experience building data pipelines, web applications and applying models and algorithms to mine big data stores.
-     Currently working on the {' '} <a href="https://banzatti.wp.txstate.edu/spexodisks/">Spexodisks Database</a>,{' '} at Texas State University. 
+     Currently working on the {' '} <a href="https://banzatti.wp.txstate.edu/spexodisks/">Spexodisks Database</a>{' '} at Texas State University. 
     </p>
   );
   const five = (
