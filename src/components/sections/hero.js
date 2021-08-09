@@ -52,7 +52,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I extract value from data.</h3>;
   const four = (
     <p>
-     I'm a software engineer with experience building data pipelines, web applications and applying models and algorithms to mine big data stores.
+     I'm a software engineer with experience building data pipelines, web applications, and applying models to mine big data stores.
      Currently working on the {' '} <a href="https://banzatti.wp.txstate.edu/spexodisks/">Spexodisks Database</a>{' '} at Texas State University. 
     </p>
   );
