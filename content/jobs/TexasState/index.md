@@ -2,7 +2,7 @@
 title: 'Software Engineer'
 company: 'Physics Dept., Texas State'
 location: 'San Marcos, TX'
-range: 'June 2021 - August 2021'
+range: 'June 2021 - present'
 url: 'https://banzatti.wp.txstate.edu/spexodisks/'
 ---
 
