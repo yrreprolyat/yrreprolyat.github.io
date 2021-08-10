@@ -6,7 +6,7 @@ module.exports = {
     description:
       'Taylor Perry is a software engineer focusing on data modeling processes and building web applications.',
     siteUrl: 'https://www.yrreprolyat.com', 
-    image: '/og.png', 
+    image: '/pic.png', 
     
   },
 
