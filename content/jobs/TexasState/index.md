@@ -6,6 +6,6 @@ range: 'June 2021 - present'
 url: 'https://banzatti.wp.txstate.edu/spexodisks/'
 ---
 
-- Designed and implemented a Django REST API to handle the data exchange between the MySQL database and React web application.
-- Created an Internal Python library used to parse and reformat data from external vendors reducing the error rate in the data pipeline by 8%.
+- Designed and implemented Django REST framework and integrated new  API's endpoints between the MySQL database and React components.
+- Assist in the development of technology roadmaps to evolve the API estate in conjunction with internal and external solution providers
 - Verified that the data was scientifically valid and acted as the last gate before the data is delivered to the open world.
