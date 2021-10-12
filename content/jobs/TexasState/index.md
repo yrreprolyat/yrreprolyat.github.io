@@ -1,11 +1,12 @@
 ---
-title: 'Software Engineer'
+title: 'Backend Software Engineer'
 company: 'Physics Dept., Texas State'
 location: 'San Marcos, TX'
-range: 'June 2021 - present'
+range: 'May 2021 - present'
 url: 'https://banzatti.wp.txstate.edu/spexodisks/'
 ---
 
-- Designed and implemented Django REST framework and integrated new  API's endpoints between the MySQL database and React components.
-- Assist in the development of technology roadmaps to evolve the API estate in conjunction with internal and external solution providers
-- Verified that the data was scientifically valid and acted as the last gate before the data is delivered to the open world.
+- Manage and contribute to all aspects of application development including functional and technical specifications, design, development and production support.
+- Designed and implemented Django RESTful API and integrated endpoints between MySQL database and React components.
+- Built containerized web server, load balancers and DNS using Docker.
+- Serve as technical leader on teams with clients, designers, project managers, and developers.
