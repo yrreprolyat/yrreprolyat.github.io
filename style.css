@@ -80,7 +80,8 @@ h1, h2, h3 {
 h2,
 .item-number,
 .dates,
-.stack {
+.stack,
+.tags {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
@@ -196,6 +197,13 @@ h3 {
 .work-list p,
 .experience-item p {
     color: var(--text-secondary);
+}
+
+.tags {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
 }
 
 .experience-list {
