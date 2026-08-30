@@ -52,15 +52,16 @@
             <h2 id="about-heading">About</h2>
             <div class="section-body about">
                 <p>
-                    I'm a senior software engineer at Shippo. I spent three years building and
-                    operating carrier invoice reconciliation across nine carriers, matching
-                    carrier invoices against labels purchased through Shippo. I now work on
-                    shipping automation.
+                    I'm a senior software engineer at Shippo. I was a founding engineer on its
+                    carrier reconciliation platform, helping grow it into a multi-service system
+                    spanning file ingestion, carrier-specific processing, billing and refund
+                    events, partner reporting, observability, and operations. I now build the
+                    rules and execution platform behind a single-call label purchasing API.
                 </p>
                 <p>
-                    Alongside that, I build AI tools for engineering teams: a deployed Slack agent
-                    for production investigations and a Claude Code plugin that keeps design
-                    documentation aligned with shipped code, now used by multiple teams.
+                    Alongside that, I build AI systems for engineering teams: a deployed Claude
+                    Agent SDK analyst in Slack and a Claude Code plugin that keeps system
+                    documentation grounded in shipped code, now used by multiple teams.
                 </p>
                 <p class="stack">
                     Distributed systems · Data pipelines · Operational correctness ·
@@ -88,14 +89,15 @@
                 <li>
                     <span class="item-number" aria-hidden="true">02</span>
                     <article>
-                        <h3>Carrier billing and reconciliation</h3>
+                        <h3>Carrier reconciliation platform</h3>
                         <p>
-                            Designed the schema and first pipeline for reconciliation-service, which
-                            matches carrier invoices against labels purchased through Shippo and
-                            emits billing and refund events. Expanded it from FedEx to nine carriers,
-                            migrated processing from PySpark to Polars, and later designed a unified
-                            file-ingestion service with durable task state, recovery, observability,
-                            and the pipeline's first SLOs.
+                            Founding engineer on Shippo's carrier reconciliation platform, a
+                            multi-service system that ingests carrier data, normalizes incompatible
+                            invoice formats, resolves charges against labels, and publishes billing,
+                            refund, and partner-reporting outputs. Across the platform, built core
+                            pipeline stages and event contracts, automated file landing and
+                            ingestion, expanded support across nine carriers and customer-owned
+                            accounts, and owned correctness, recovery, observability, and SLOs.
                         </p>
                         <p class="tags">Python · Polars · Kafka · PostgreSQL · DynamoDB · gRPC</p>
                     </article>
@@ -152,9 +154,9 @@
                         <p class="organization">Shippo</p>
                         <p>
                             Building shipping automation, carrier reconciliation, and applied
-                            AI tooling. Promoted three times since joining in 2021, and launched
-                            three production services with end-to-end ownership across application
-                            code, infrastructure, and operations.
+                            AI tooling. Promoted three times since joining in 2021, with end-to-end
+                            ownership across distributed services, data pipelines, infrastructure,
+                            observability, and operations.
                         </p>
                     </div>
                 </article>
