@@ -53,15 +53,14 @@
             <div class="section-body about">
                 <p>
                     I'm a senior software engineer at Shippo. I spent three years building and
-                    operating carrier invoice reconciliation across nine carriers, then moved to
-                    Data Products to build shipping automation. My work spans Python services,
-                    data pipelines, infrastructure, observability, and the operational details
-                    that make money-moving systems reliable.
+                    running carrier invoice reconciliation, the pipeline that matches what nine
+                    carriers bill against the labels Shippo sold, and now work on shipping
+                    automation.
                 </p>
                 <p>
-                    I also build AI tooling for engineering teams: a deployed Claude Agent SDK
-                    analyst in Slack, and a Claude Code plugin that keeps design documentation
-                    grounded in shipped code and is now used by multiple teams.
+                    I also build AI tooling for the engineers around me: an agent that
+                    investigates production issues from Slack, and a documentation harness that
+                    keeps design docs grounded in merged code, now used by several teams.
                 </p>
                 <p class="stack">
                     Distributed systems · Data pipelines · Operational correctness ·
@@ -91,12 +90,13 @@
                     <article>
                         <h3>Carrier billing and reconciliation</h3>
                         <p>
-                            Built reconciliation-service from its initial commit, moved its pipeline from
-                            Airflow and PySpark to Polars, and spent three years extending it across
-                            nine carriers, including FedEx, UPS, USPS, DHL Express, Colissimo and
-                            Royal Mail. Designed the file-ingestion service that replaced per-carrier
-                            pipelines with a single DynamoDB-backed task state machine, and owned
-                            recovery, observability, and the pipeline's first SLOs.
+                            Designed the schema and first pipeline for reconciliation-service, which
+                            matches carrier invoices to the labels Shippo sold and emits billing and
+                            refund events. Moved that pipeline from Airflow and PySpark to Polars and
+                            grew it from FedEx to nine carriers, including UPS, USPS, DHL Express,
+                            Colissimo and Royal Mail. Later designed the file-ingestion service that
+                            replaced per-carrier pipelines with one DynamoDB-backed task state
+                            machine, and owned recovery, observability, and the pipeline's first SLOs.
                         </p>
                         <p class="tags">Python · Airflow · PySpark · Polars · FastAPI · Kafka · Protobuf/gRPC · PostgreSQL · DynamoDB · AWS Lambda</p>
                     </article>
@@ -106,10 +106,10 @@
                     <article>
                         <h3>Reconciliation analyst</h3>
                         <p>
-                            Built and deployed a Claude Agent SDK analyst in Slack that routes
-                            investigations to a specialized subagent with read-only Databricks and
-                            New Relic tools exposed through MCP, then streams structured findings
-                            back to the thread.
+                            Built and deployed a Slack agent that investigates reconciliation
+                            issues. A router hands each question to a read-only analyst subagent
+                            with Databricks and New Relic tools over MCP, and the findings stream
+                            back into the thread as structured answers.
                         </p>
                         <p class="tags">Python · Claude Agent SDK · MCP · Slack Bolt · Databricks · New Relic · Kubernetes</p>
                     </article>
@@ -119,10 +119,10 @@
                     <article>
                         <h3>Wiki harness</h3>
                         <p>
-                            Built a Claude Code plugin that turns merged changes into code-grounded
-                            design documentation. It combines reusable skills, hooks, validation, and
-                            Bedrock-powered CI that opens documentation PRs, and is now used by
-                            multiple engineering teams.
+                            Built an agent harness that turns merged changes into code-grounded
+                            design documentation: reusable skills, hooks that guard the workflow, a
+                            linter, and a CI ingest that opens documentation PRs after each merge.
+                            Packaged as a plugin and now used by multiple engineering teams.
                         </p>
                         <p class="tags">Claude Code · Skills · Hooks · Amazon Bedrock · GitHub Actions · Python</p>
                     </article>
@@ -152,9 +152,9 @@
                         <p class="organization">Shippo</p>
                         <p>
                             Building shipping automation, carrier reconciliation, and applied
-                            AI tooling. Promoted three times since joining in 2021; built three
-                            production services from their initial commits and owned systems
-                            across application code, infrastructure, and operations.
+                            AI tooling. Promoted three times since joining in 2021. Started three
+                            production services and owned them across application code,
+                            infrastructure, and operations.
                         </p>
                     </div>
                 </article>
