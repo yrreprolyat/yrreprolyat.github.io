@@ -53,14 +53,14 @@
             <div class="section-body about">
                 <p>
                     I'm a senior software engineer at Shippo. I spent three years building and
-                    running carrier invoice reconciliation, the pipeline that matches what nine
-                    carriers bill against the labels Shippo sold, and now work on shipping
-                    automation.
+                    operating carrier invoice reconciliation across nine carriers, matching
+                    carrier invoices against labels purchased through Shippo. I now work on
+                    shipping automation.
                 </p>
                 <p>
-                    I also build AI tooling for the engineers around me: an agent that
-                    investigates production issues from Slack, and a documentation harness that
-                    keeps design docs grounded in merged code, now used by several teams.
+                    Alongside that, I build AI tools for engineering teams: a deployed Slack agent
+                    for production investigations and a Claude Code plugin that keeps design
+                    documentation aligned with shipped code, now used by multiple teams.
                 </p>
                 <p class="stack">
                     Distributed systems · Data pipelines · Operational correctness ·
@@ -77,12 +77,12 @@
                     <article>
                         <h3>Shipping automation</h3>
                         <p>
-                            Built the rules evaluation engine, the Postgres-backed request lifecycle
-                            that keeps label purchases idempotent across retries and restarts, the
-                            OpenTelemetry instrumentation, and the end-to-end gate that promotes
-                            builds, all behind a single-call label purchasing API.
+                            Built the rules engine and durable Postgres workflow behind a single-call
+                            label purchasing API, keeping purchases idempotent across retries and
+                            restarts. Also owned its OpenTelemetry instrumentation and end-to-end
+                            deployment gate.
                         </p>
-                        <p class="tags">Python · FastAPI · SQLAlchemy · PostgreSQL · httpx · AWS KMS · OpenTelemetry · New Relic</p>
+                        <p class="tags">Python · FastAPI · PostgreSQL · OpenTelemetry · New Relic</p>
                     </article>
                 </li>
                 <li>
@@ -91,14 +91,13 @@
                         <h3>Carrier billing and reconciliation</h3>
                         <p>
                             Designed the schema and first pipeline for reconciliation-service, which
-                            matches carrier invoices to the labels Shippo sold and emits billing and
-                            refund events. Moved that pipeline from Airflow and PySpark to Polars and
-                            grew it from FedEx to nine carriers, including UPS, USPS, DHL Express,
-                            Colissimo and Royal Mail. Later designed the file-ingestion service that
-                            replaced per-carrier pipelines with one DynamoDB-backed task state
-                            machine, and owned recovery, observability, and the pipeline's first SLOs.
+                            matches carrier invoices against labels purchased through Shippo and
+                            emits billing and refund events. Expanded it from FedEx to nine carriers,
+                            migrated processing from PySpark to Polars, and later designed a unified
+                            file-ingestion service with durable task state, recovery, observability,
+                            and the pipeline's first SLOs.
                         </p>
-                        <p class="tags">Python · Airflow · PySpark · Polars · FastAPI · Kafka · Protobuf/gRPC · PostgreSQL · DynamoDB · AWS Lambda</p>
+                        <p class="tags">Python · Polars · Kafka · PostgreSQL · DynamoDB · gRPC</p>
                     </article>
                 </li>
                 <li>
@@ -106,12 +105,12 @@
                     <article>
                         <h3>Reconciliation analyst</h3>
                         <p>
-                            Built and deployed a Slack agent that investigates reconciliation
-                            issues. A router hands each question to a read-only analyst subagent
-                            with Databricks and New Relic tools over MCP, and the findings stream
-                            back into the thread as structured answers.
+                            Built and deployed a Claude Agent SDK agent in Slack for reconciliation
+                            investigations. It routes questions to a read-only analyst subagent with
+                            Databricks and New Relic tools exposed through MCP, then streams
+                            structured findings back into the thread.
                         </p>
-                        <p class="tags">Python · Claude Agent SDK · MCP · Slack Bolt · Databricks · New Relic · Kubernetes</p>
+                        <p class="tags">Python · Claude Agent SDK · MCP · Slack Bolt · Databricks · New Relic</p>
                     </article>
                 </li>
                 <li>
@@ -119,12 +118,12 @@
                     <article>
                         <h3>Wiki harness</h3>
                         <p>
-                            Built an agent harness that turns merged changes into code-grounded
-                            design documentation: reusable skills, hooks that guard the workflow, a
-                            linter, and a CI ingest that opens documentation PRs after each merge.
-                            Packaged as a plugin and now used by multiple engineering teams.
+                            Built a Claude Code plugin that turns merged changes into code-grounded
+                            design documentation. It combines reusable skills, workflow hooks,
+                            validation, and CI ingestion that opens documentation PRs after merges,
+                            and is now used by multiple engineering teams.
                         </p>
-                        <p class="tags">Claude Code · Skills · Hooks · Amazon Bedrock · GitHub Actions · Python</p>
+                        <p class="tags">Claude Code · Python · Amazon Bedrock · GitHub Actions</p>
                     </article>
                 </li>
                 <li>
@@ -132,11 +131,12 @@
                     <article>
                         <h3>Service platform and infrastructure</h3>
                         <p>
-                            Stood up new services end to end on EKS: Terraform for IAM, OIDC, KMS,
-                            databases and Kafka topics, Helm charts deployed through ArgoCD, Argo
-                            Rollouts canaries, and New Relic dashboards and alerts managed as code.
+                            Built and operated the infrastructure for four production services on
+                            AWS with EKS, spanning IAM and OIDC, databases, messaging, secrets, Helm
+                            deployments, Argo Rollouts canaries, and New Relic dashboards and alerts
+                            managed as code.
                         </p>
-                        <p class="tags">Terraform · Kubernetes · Helm · ArgoCD · Argo Rollouts · AWS · New Relic</p>
+                        <p class="tags">Terraform · AWS · Kubernetes · Helm · ArgoCD · Argo Rollouts</p>
                     </article>
                 </li>
             </ol>
@@ -152,9 +152,9 @@
                         <p class="organization">Shippo</p>
                         <p>
                             Building shipping automation, carrier reconciliation, and applied
-                            AI tooling. Promoted three times since joining in 2021. Started three
-                            production services and owned them across application code,
-                            infrastructure, and operations.
+                            AI tooling. Promoted three times since joining in 2021, and launched
+                            three production services with end-to-end ownership across application
+                            code, infrastructure, and operations.
                         </p>
                     </div>
                 </article>
