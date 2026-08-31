@@ -23,5 +23,14 @@ GitHub Pages deploys the repository root from the `dev` branch to
 ├── index.html
 ├── style.css
 ├── favicon.svg
+├── og.png        # link preview image, rendered from og.html
+├── og.html
 └── CNAME
+```
+
+To regenerate `og.png` after editing `og.html`:
+
+```bash
+google-chrome --headless=new --hide-scrollbars --window-size=1200,630 \
+  --screenshot=og.png "file://$PWD/og.html"
 ```

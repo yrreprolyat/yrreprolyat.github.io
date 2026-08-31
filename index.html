@@ -9,7 +9,12 @@
     <meta property="og:description" content="Backend systems where correctness matters, and AI tools that help engineering teams understand those systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yrreprolyat.com/">
-    <meta name="theme-color" content="#f3f0e8">
+    <meta property="og:image" content="https://yrreprolyat.com/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f6f3">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#151514">
     <title>Taylor Perry | Senior Software Engineer</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
@@ -20,6 +25,12 @@
         "name": "Taylor Perry",
         "url": "https://yrreprolyat.com/",
         "jobTitle": "Senior Software Engineer",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Austin",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+        },
         "worksFor": {
             "@type": "Organization",
             "name": "Shippo"
@@ -33,24 +44,25 @@
 </head>
 <body>
     <main>
-        <header class="hero">
-            <p class="eyebrow">Senior Software Engineer · Austin, Texas</p>
-            <h1>Taylor Perry</h1>
-            <p class="lede">
-                I build backend systems where correctness matters, and AI tools that help
-                engineering teams understand those systems.
-            </p>
-
-            <nav class="profile-links" aria-label="Profile links">
-                <a href="https://github.com/yrreprolyat">GitHub</a>
-                <a href="https://www.linkedin.com/in/yrreprolyat">LinkedIn</a>
-                <a href="mailto:yrreprolyat@gmail.com">Email</a>
-            </nav>
+        <header class="row hero">
+            <p class="key">Austin, Texas</p>
+            <div class="entry">
+                <h1>Taylor Perry</h1>
+                <p class="lede">
+                    I build backend systems where correctness matters, and AI tools that help
+                    engineering teams understand those systems.
+                </p>
+                <nav class="profile-links" aria-label="Profile links">
+                    <a href="https://github.com/yrreprolyat">GitHub</a>
+                    <a href="https://www.linkedin.com/in/yrreprolyat">LinkedIn</a>
+                    <a href="mailto:yrreprolyat@gmail.com">Email</a>
+                </nav>
+            </div>
         </header>
 
-        <section class="section-grid" aria-labelledby="about-heading">
-            <h2 id="about-heading">About</h2>
-            <div class="section-body about">
+        <section class="section" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="key">About</h2>
+            <div class="entry">
                 <p>
                     I'm a senior software engineer at Shippo, where I've worked since 2021 on
                     the systems that buy shipping labels and check what carriers charge for
@@ -62,19 +74,15 @@
                     More recently I've been building tools on Claude that help engineering
                     teams investigate those systems and keep their documentation honest.
                 </p>
-                <p class="stack">
-                    Distributed systems · Data pipelines · Reliability ·
-                    Observability · Infrastructure · Applied AI
-                </p>
             </div>
         </section>
 
-        <section class="section-grid" aria-labelledby="work-heading">
-            <h2 id="work-heading">Selected work</h2>
-            <ol class="work-list">
-                <li>
-                    <span class="item-number" aria-hidden="true">01</span>
-                    <article>
+        <section class="section" aria-labelledby="work-heading">
+            <h2 id="work-heading" class="key">Selected work</h2>
+            <ul class="rows">
+                <li class="row">
+                    <p class="key">API</p>
+                    <article class="entry">
                         <h3>Label purchasing API</h3>
                         <p>
                             An API that takes a shipment, applies shipping rules, and buys the
@@ -88,9 +96,9 @@
                         <p class="tags">Python · FastAPI · PostgreSQL · OpenTelemetry · New Relic</p>
                     </article>
                 </li>
-                <li>
-                    <span class="item-number" aria-hidden="true">02</span>
-                    <article>
+                <li class="row">
+                    <p class="key">Pipeline</p>
+                    <article class="entry">
                         <h3>Carrier reconciliation platform</h3>
                         <p>
                             Carriers send invoices in formats that don't agree with each other.
@@ -106,9 +114,9 @@
                         <p class="tags">Python · Polars · Kafka · PostgreSQL · DynamoDB · gRPC</p>
                     </article>
                 </li>
-                <li>
-                    <span class="item-number" aria-hidden="true">03</span>
-                    <article>
+                <li class="row">
+                    <p class="key">Agent</p>
+                    <article class="entry">
                         <h3>Reconciliation analyst</h3>
                         <p>
                             A Slack agent for reconciliation investigations, built on the Claude
@@ -120,9 +128,9 @@
                         <p class="tags">Python · Claude Agent SDK · MCP · Slack Bolt · Databricks · New Relic</p>
                     </article>
                 </li>
-                <li>
-                    <span class="item-number" aria-hidden="true">04</span>
-                    <article>
+                <li class="row">
+                    <p class="key">Tooling</p>
+                    <article class="entry">
                         <h3>Wiki harness</h3>
                         <p>
                             A Claude Code plugin that turns merged pull requests into design
@@ -135,9 +143,9 @@
                         <p class="tags">Claude Code · Python · Amazon Bedrock · GitHub Actions</p>
                     </article>
                 </li>
-                <li>
-                    <span class="item-number" aria-hidden="true">05</span>
-                    <article>
+                <li class="row">
+                    <p class="key">Infra</p>
+                    <article class="entry">
                         <h3>Service platform and infrastructure</h3>
                         <p>
                             The AWS infrastructure for four production services on EKS, built
@@ -148,55 +156,49 @@
                         <p class="tags">Terraform · AWS · Kubernetes · Helm · ArgoCD · Argo Rollouts</p>
                     </article>
                 </li>
-            </ol>
+            </ul>
         </section>
 
-        <section class="section-grid" aria-labelledby="experience-heading">
-            <h2 id="experience-heading">Experience</h2>
-            <div class="experience-list">
-                <article class="experience-item">
-                    <p class="dates">2021–present</p>
-                    <div>
-                        <h3>Senior Software Engineer</h3>
-                        <p class="organization">Shippo</p>
+        <section class="section" aria-labelledby="experience-heading">
+            <h2 id="experience-heading" class="key">Experience</h2>
+            <ul class="rows">
+                <li class="row">
+                    <p class="key">2021–present</p>
+                    <article class="entry">
+                        <h3>Senior Software Engineer <span class="org">Shippo</span></h3>
                         <p>
                             Shipping automation, carrier reconciliation, and applied AI tooling,
                             described above. Promoted three times.
                         </p>
-                    </div>
-                </article>
-
-                <article class="experience-item">
-                    <p class="dates">2021</p>
-                    <div>
-                        <h3>Back-End Developer</h3>
-                        <p class="organization">
-                            <a href="https://spexodisks.com/">SpExoDisks</a> · Texas State University
-                        </p>
+                    </article>
+                </li>
+                <li class="row">
+                    <p class="key">2021</p>
+                    <article class="entry">
+                        <h3>Back-End Developer <span class="org"><a href="https://spexodisks.com/">SpExoDisks</a>, Texas State University</span></h3>
                         <p>
                             Designed and implemented the Django REST API for a public astronomy
                             database of infrared spectra from planet-forming disks.
                         </p>
-                    </div>
-                </article>
-
-                <article class="experience-item">
-                    <p class="dates">2020</p>
-                    <div>
-                        <h3>Web Developer</h3>
-                        <p class="organization">Traces of Texas</p>
+                    </article>
+                </li>
+                <li class="row">
+                    <p class="key">2020</p>
+                    <article class="entry">
+                        <h3>Web Developer <span class="org">Traces of Texas</span></h3>
                         <p>
                             Built and ran the first website for a Texas history brand with more
                             than a million Facebook followers, tying together its community
                             forum, photo storefront, supporter platform, and social channels.
                         </p>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                </li>
+            </ul>
         </section>
 
-        <footer>
-            <p>Built with HTML and CSS. <a href="https://github.com/yrreprolyat/yrreprolyat.github.io">View source</a>.</p>
+        <footer class="row">
+            <p class="key" aria-hidden="true"></p>
+            <p class="entry">Built with HTML and CSS. <a href="https://github.com/yrreprolyat/yrreprolyat.github.io">View source</a>.</p>
         </footer>
     </main>
 </body>
