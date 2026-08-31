@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Taylor Perry is a senior software engineer building backend systems and AI tools for engineering teams.">
+    <meta name="description" content="Taylor Perry is a senior software engineer in Austin, Texas. Backend systems where correctness matters, and AI tools that help engineering teams understand those systems.">
     <link rel="canonical" href="https://yrreprolyat.com/">
     <meta property="og:title" content="Taylor Perry | Senior Software Engineer">
-    <meta property="og:description" content="Backend systems where correctness matters, and AI tools that help engineering teams understand them.">
+    <meta property="og:description" content="Backend systems where correctness matters, and AI tools that help engineering teams understand those systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yrreprolyat.com/">
     <meta name="theme-color" content="#f3f0e8">
@@ -38,7 +38,7 @@
             <h1>Taylor Perry</h1>
             <p class="lede">
                 I build backend systems where correctness matters, and AI tools that help
-                engineering teams understand them.
+                engineering teams understand those systems.
             </p>
 
             <nav class="profile-links" aria-label="Profile links">
@@ -52,19 +52,18 @@
             <h2 id="about-heading">About</h2>
             <div class="section-body about">
                 <p>
-                    I'm a senior software engineer at Shippo. I was a founding engineer on its
-                    carrier reconciliation platform, helping grow it into a multi-service system
-                    spanning file ingestion, carrier-specific processing, billing and refund
-                    events, partner reporting, observability, and operations. I now build the
-                    rules and execution platform behind a single-call label purchasing API.
+                    I'm a senior software engineer at Shippo, where I've worked since 2021 on
+                    the systems that buy shipping labels and check what carriers charge for
+                    them. Most of that work is backend: data pipelines, workflows that have to
+                    survive retries and restarts, and the infrastructure and observability that
+                    keep them running in production.
                 </p>
                 <p>
-                    Alongside that, I build AI systems for engineering teams: a deployed Claude
-                    Agent SDK analyst in Slack and a Claude Code plugin that keeps system
-                    documentation grounded in shipped code, now used by multiple teams.
+                    More recently I've been building tools on Claude that help engineering
+                    teams investigate those systems and keep their documentation honest.
                 </p>
                 <p class="stack">
-                    Distributed systems · Data pipelines · Operational correctness ·
+                    Distributed systems · Data pipelines · Reliability ·
                     Observability · Infrastructure · Applied AI
                 </p>
             </div>
@@ -76,12 +75,15 @@
                 <li>
                     <span class="item-number" aria-hidden="true">01</span>
                     <article>
-                        <h3>Shipping automation</h3>
+                        <h3>Label purchasing API</h3>
                         <p>
-                            Built the rules engine and durable Postgres workflow behind a single-call
-                            label purchasing API, keeping purchases idempotent across retries and
-                            restarts. Also owned its OpenTelemetry instrumentation and end-to-end
-                            deployment gate.
+                            An API that takes a shipment, applies shipping rules, and buys the
+                            label in a single call. I built the rules engine that makes the
+                            decision and the Postgres-backed workflow that carries out the
+                            purchase, so a call that fails partway through can be retried or
+                            restarted without buying a second label. I also instrumented the
+                            service with OpenTelemetry and wrote the end-to-end check that gates
+                            its deployments.
                         </p>
                         <p class="tags">Python · FastAPI · PostgreSQL · OpenTelemetry · New Relic</p>
                     </article>
@@ -91,13 +93,15 @@
                     <article>
                         <h3>Carrier reconciliation platform</h3>
                         <p>
-                            Founding engineer on Shippo's carrier reconciliation platform, a
-                            multi-service system that ingests carrier data, normalizes incompatible
-                            invoice formats, resolves charges against labels, and publishes billing,
-                            refund, and partner-reporting outputs. Across the platform, built core
-                            pipeline stages and event contracts, automated file landing and
-                            ingestion, expanded support across nine carriers and customer-owned
-                            accounts, and owned correctness, recovery, observability, and SLOs.
+                            Carriers send invoices in formats that don't agree with each other.
+                            This platform ingests those files, normalizes them, matches each
+                            charge to the label it belongs to, and publishes the results as
+                            billing events, refund events, and partner reports. I was a founding
+                            engineer on it. I built core pipeline stages and the events that
+                            connect them, automated ingestion so new files process without manual
+                            steps, extended coverage to nine carriers and to customers' own
+                            carrier accounts, and was responsible for keeping the system correct,
+                            recoverable, and within its SLOs.
                         </p>
                         <p class="tags">Python · Polars · Kafka · PostgreSQL · DynamoDB · gRPC</p>
                     </article>
@@ -107,10 +111,11 @@
                     <article>
                         <h3>Reconciliation analyst</h3>
                         <p>
-                            Built and deployed a Claude Agent SDK agent in Slack for reconciliation
-                            investigations. It routes questions to a read-only analyst subagent with
-                            Databricks and New Relic tools exposed through MCP, then streams
-                            structured findings back into the thread.
+                            A Slack agent for reconciliation investigations, built on the Claude
+                            Agent SDK and running in production at Shippo. Ask it a question in a
+                            thread and it hands the question to a read-only analyst subagent that
+                            can query Databricks and New Relic through MCP, then streams the
+                            findings back into the thread as structured results.
                         </p>
                         <p class="tags">Python · Claude Agent SDK · MCP · Slack Bolt · Databricks · New Relic</p>
                     </article>
@@ -120,10 +125,12 @@
                     <article>
                         <h3>Wiki harness</h3>
                         <p>
-                            Built a Claude Code plugin that turns merged changes into code-grounded
-                            design documentation. It combines reusable skills, workflow hooks,
-                            validation, and CI ingestion that opens documentation PRs after merges,
-                            and is now used by multiple engineering teams.
+                            A Claude Code plugin that turns merged pull requests into design
+                            documentation grounded in the code that actually shipped. After a
+                            merge, a CI job runs the harness and opens a documentation PR; a set
+                            of reusable skills, workflow hooks, and validation keeps the docs
+                            consistent as the codebase changes. Several engineering teams at
+                            Shippo now use it.
                         </p>
                         <p class="tags">Claude Code · Python · Amazon Bedrock · GitHub Actions</p>
                     </article>
@@ -133,10 +140,10 @@
                     <article>
                         <h3>Service platform and infrastructure</h3>
                         <p>
-                            Built and operated the infrastructure for four production services on
-                            AWS with EKS, spanning IAM and OIDC, databases, messaging, secrets, Helm
-                            deployments, Argo Rollouts canaries, and New Relic dashboards and alerts
-                            managed as code.
+                            The AWS infrastructure for four production services on EKS, built
+                            and operated as code: IAM and OIDC, databases, messaging, secrets,
+                            Helm deployments through Argo CD, canary rollouts with Argo Rollouts,
+                            and the New Relic dashboards and alerts that watch all of it.
                         </p>
                         <p class="tags">Terraform · AWS · Kubernetes · Helm · ArgoCD · Argo Rollouts</p>
                     </article>
@@ -148,15 +155,13 @@
             <h2 id="experience-heading">Experience</h2>
             <div class="experience-list">
                 <article class="experience-item">
-                    <p class="dates">2021 - present</p>
+                    <p class="dates">2021–present</p>
                     <div>
                         <h3>Senior Software Engineer</h3>
                         <p class="organization">Shippo</p>
                         <p>
-                            Building shipping automation, carrier reconciliation, and applied
-                            AI tooling. Promoted three times since joining in 2021, with end-to-end
-                            ownership across distributed services, data pipelines, infrastructure,
-                            observability, and operations.
+                            Shipping automation, carrier reconciliation, and applied AI tooling,
+                            described above. Promoted three times.
                         </p>
                     </div>
                 </article>
@@ -181,10 +186,9 @@
                         <h3>Web Developer</h3>
                         <p class="organization">Traces of Texas</p>
                         <p>
-                            Built and operated the original website for a Texas history brand
-                            with more than one million Facebook followers, integrating its
-                            community forum, photo storefront, supporter platform, and social
-                            channels.
+                            Built and ran the first website for a Texas history brand with more
+                            than a million Facebook followers, tying together its community
+                            forum, photo storefront, supporter platform, and social channels.
                         </p>
                     </div>
                 </article>
